@@ -19,7 +19,7 @@ pipeline{
         stage('test'){
             steps{
                 echo 'this is the test job'
-                sh 'mvm clean test'
+                sh 'mvn clean test'
                 sleep 9
             }
         }
